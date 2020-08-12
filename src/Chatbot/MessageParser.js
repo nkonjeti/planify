@@ -26,6 +26,11 @@ class MessageParser {
      {
         this.actionProvider.earlyInternships();
      }
+      //classes
+
+      else if(response == 4 && lowercase.includes("yes")) {
+        this.actionProvider.struggle();
+      }
 
      //emotions
 
@@ -71,13 +76,30 @@ class MessageParser {
 
 
 
-        //Neha classes here
+        //Neha classes here (we can change these response numbers one we know everyone else's)
+        else if (response == 6) {
+          this.actionProvider.class1();
+          response++
+        }
+        else if(response == 7) {
+          this.actionProvider.class2();
+          response++;
+        }
+        else if(response == 8) {
+          this.actionProvider.class3();
+          response++;
+        }
+        else if (response == 9) {
+          this.actionProvider.class4();
+          
+        }
+
 
 
 
       }
       
     }
-  }
+  
   
   export default MessageParser;
