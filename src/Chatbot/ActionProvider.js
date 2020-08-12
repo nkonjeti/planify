@@ -36,7 +36,18 @@ class ActionProvider {
     };
     
 
-   
+  career = () => {
+    //generates random num from 0 to this.greetings.length-1
+    const message = this.createChatBotMessage("Are you a first or a second year student?");
+    //prints the message
+    this.addMessageToState(message);
+
+  };
+
+  earlyInternships = () => {
+    const message = this.createChatBotMessage("You might want to look into the early careers or apprentenceship section of companies you are interested in. But first send your resume to your college career center for review. Internship apps typically open in the fall/winter, so be prepared by then! Research is also a viable way to get experience if you don't land the internship of your dreams right away!")
+    this.addMessageToState(message);
+  }
 
     
   

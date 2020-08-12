@@ -22,6 +22,10 @@ class MessageParser {
      else if(lowercase.includes("are you a robot")){
         this.actionProvider.robot();
       }
+     else if (lowercase.includes("first") || (lowercase.includes("second")))
+     {
+        this.actionProvider.earlyInternships();
+     }
 
      //emotions
 
@@ -31,8 +35,8 @@ class MessageParser {
 
 
       //this would direct to planned reflection questions
-      else{
-        if(response == 1){
+     
+        if(response === 1){
           this.actionProvider.greet();
           response++;
          
@@ -41,6 +45,7 @@ class MessageParser {
         //Anushka Emotion code here
 
 
+        
 
 
 
@@ -51,8 +56,12 @@ class MessageParser {
 
 
         //Sana Jobs/Internships here
-
-
+        
+       else if(response ===4)
+       {
+         this.actionProvider.career();
+         response++;
+       }
 
 
 
