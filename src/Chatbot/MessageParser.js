@@ -13,13 +13,13 @@ class MessageParser {
       const lowercase = message.toLowerCase()
 
       //custom messages
-     
+     //easter eggs
      if(lowercase.includes("who are you")){
           //greet in actionprovider
           this.actionProvider.who();
 
       }  
-     else if(lowercase.includes("are you a robot")){
+     else if(lowercase.includes("are you a robot") || lowercase.includes("who made you")){
         this.actionProvider.robot();
       }
       else if(lowercase.includes("Peer") || lowercase.includes("1")) {
@@ -49,7 +49,7 @@ class MessageParser {
       else if (lowercase.includes("7")) {
         this.actionProvider.work();
       }
-      else if (lowercase.includes("work")) {
+      else if (lowercase.includes("work") && response == 6) {
         this.actionProvider.work2();
       }
       else if (lowercase.includes("colleagues")) {
@@ -73,6 +73,12 @@ class MessageParser {
 
 
       //if doesn't match custom messages 
+
+      //empty message 
+      else if(lowercase === "" || lowercase === " ") {
+        this.actionProvider.emptyMessage();
+      }
+      
 
 
       //this would direct to planned reflection questions
