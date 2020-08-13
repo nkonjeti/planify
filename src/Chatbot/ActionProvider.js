@@ -48,7 +48,7 @@ class ActionProvider {
     }
     
     doIt = () => {
-      const message = this.createChatBotMessage("If a simple no isn't doing the trick, come up with a few excuses. Are you on a team of any kind?");
+      const message = this.createChatBotMessage("If a simple no isn't doing the trick, come up with a few excuses. Are you on a team of any kind? (Gimme a thumbs up or thumbs down to go on)");
       this.addMessageToState(message);
     }
 
