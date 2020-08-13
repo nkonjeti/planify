@@ -1,13 +1,37 @@
 import React from 'react';
+//import './App.css';
+import './Timer.css';
+ 
+ function Timer() {
+   return (
+  
+ <section>
+   <section className = "timer">
+      <div>
+       
+      <h2>Break Time!</h2>
+       <p>Countdown for your break. You deserve it.</p>
+      </div>
+     <div>
+       <section>
+         <p>17</p>
+         <p><small>Minutes</small></p>
 
-import './App.css';
+       </section>
+       
+       <span>:</span>
+      
+      
+       <section>
+         <p>00</p>
+         <p><small>Seconds</small></p>
 
-function Timer() {
-  return (
-    <div>
-      <h1>Timer </h1>
-    </div>
-  );
-}
+       </section>
+     </div>
 
-export default Timer;
+   </section>
+   </section>
+   );
+};
+ 
+ export default Timer;

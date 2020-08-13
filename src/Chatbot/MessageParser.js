@@ -59,11 +59,14 @@ class MessageParser {
      {
         this.actionProvider.earlyInternships();
      }
-      //classes
 
+      //classes
       else if(response == 4 && lowercase.includes("yes")) {
-        this.actionProvider.struggle();
-      }
+               this.actionProvider.struggle();
+            }
+         
+        
+     
 
      //emotions
 
