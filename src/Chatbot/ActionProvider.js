@@ -4,6 +4,7 @@ class ActionProvider {
       this.setState = setStateFunc;
       //array
       this.greetings = ["buddy", "pal", "awesome friend", "amazing friend", "friend", "best friend", "bestie"];
+      this.timeManagement=["Try to use a planner and the calendar app here on Planify to break down your day into chunks.", "Remember that mental health is a priority, and don't fill up your entire schedule.","Schedule breaks in between for productivity.","It's ok to say no to opportunities","Try to prioritize your time on 2-3 clubs and the rest of your time on mental health and classes.","Keep your prioritizes in check and always complete the things that will be due soon first."]
       this.nicePhrases = ["I like being your friend!", "ooh I want to share a joke to make you laugh: I like to sit on my robot-tom. Let's pretend you liked that joke", "Fun fact: I like to do the robot. It comes naturally to me.","my phone number is: 1010101010 just FYI", "I already think that you are an awesome person!"]
       this.usnews = ["Break up larger projects, such as research papers, field studies, and cumulative finals, into manageable chunks. And spread the stages over a reasonable number of days.", "Schedule your studying for times when you can seriously engage with the work. This can be very different, depending on your biochronology. Some students find 11 p.m. the perfect time to focus, others 7 a.m. Just because your roommate or partner studies at a particular time doesn't mean it will work for you.","Especially at the beginning of the semester, you should track how long it takes you to do the homework in each of your classes, prepare for quizzes and tests, and write short papers. Knowing this can help you plan the time frame for future course assignments.", " Even though there's no parent or teacher to stand over you, be sure you're doing the outside-of-class work when it's assigned. Doing the reading in advance of the lecture, studying for each quiz as it comes along, and memorizing what needs to be memorized on a week-by-week basis are all strategies that will increase your efficiency and cut down on overall study time."]
       this.classresources = ["I recommend attending office hours for the classes you are struggling with. You can ask questions about anything you are struggling with and if you are in a CS class you can even share your screen!", "I recommend to try joining a study group for your class. You could ask the peers in your class and you could form a study group! If you are at home, you could do virtual calls with your study group!", "Piazza is a great platform to attend a q & a for your classes!", "Ask any of your peers or TAs in your classes! They will be glad to help!", "Even if your classes are virtual, office hours are super helpful and you can ask questions about the topics you are struggling with!"]
@@ -32,7 +33,7 @@ class ActionProvider {
         const pick = Math.floor(randomnum);
       //generates random message for greeting 
         const randommessage = this.greetings[pick];
-        const message = this.createChatBotMessage(`Hello ${randommessage}. How is college?`);
+        const message = this.createChatBotMessage(`Hello ${randommessage}.`);
         //prints the message
         this.addMessageToState(message);
 
@@ -47,6 +48,27 @@ class ActionProvider {
       this.addMessageToState(message);
     }
     
+    clubs = () => {
+      const message = this.createChatBotMessage("What clubs are you involved in?");
+      //prints the message
+      this.addMessageToState(message);
+  
+    };
+
+    tips1 = () => {
+      const message = this.createChatBotMessage("Are you able to manage your time well with clubs?");
+      this.addMessageToState(message);
+    }
+
+    tips2 = () => {
+      const message = this.createChatBotMessage("Do you want any time management tips?");
+      this.addMessageToState(message);
+    }
+
+    tips3= () => {
+        //generates random num from 0 to this.timeManagement.length-1
+        const randomnum = Math.random() * (this.timeManagement.length - 1);
+    }
     doIt = () => {
       const message = this.createChatBotMessage("If a simple no isn't doing the trick, come up with a few excuses. Are you on a team of any kind? (Gimme a thumbs up or thumbs down to go on)");
       this.addMessageToState(message);
@@ -61,11 +83,14 @@ class ActionProvider {
     //generates random num from 0 to this.greetings.length-1
         const randomnum = Math.random() * (this.nicePhrases.length - 1);
         const pick = Math.floor(randomnum);
-      //generates random message for greeting 
-        const randommessage = this.nicePhrases[pick];
-        const message = this.createChatBotMessage(`${randommessage}. Are you able to keep up with college work?`);
+      //generates random message for tips  
+        const randommessage = this.timeManagement[pick];
+        const message = this.createChatBotMessage(`${randommessage} I hope this tip will help you manage your time better. `);
         this.addMessageToState(message);
-  }
+    }
+
+   
+  
   class2 = () => {
      //generates random num from 0 to this.greetings.length-1
      const randomnum = Math.random() * (this.usnews.length - 1);
