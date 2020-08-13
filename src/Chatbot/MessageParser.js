@@ -31,10 +31,10 @@ class MessageParser {
       else if (lowercase.includes("5")){
         this.actionProvider.doIt();
       }
-      else if (lowercase.includes("up")) {
+      else if (lowercase.includes("thumbs up")) {
         this.actionProvider.maximize();
       }
-      else if (lowercase.includes("down")) {
+      else if (lowercase.includes("thumbs down")) {
         this.actionProvider.maximization();
       }
       else if (lowercase.includes("6")) {
