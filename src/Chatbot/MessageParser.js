@@ -1,4 +1,4 @@
-var response = 4;
+var response = 1;
 class MessageParser {
     constructor(actionProvider, state) {
       this.actionProvider = actionProvider;
@@ -61,7 +61,7 @@ class MessageParser {
      }
 
       //classes
-      else if(response == 4 && lowercase.includes("yes")) {
+      else if(response == 8 && lowercase.includes("yes")) {
                this.actionProvider.struggle();
             }
          
