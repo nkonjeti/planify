@@ -17,7 +17,6 @@ import './Timer.css';
          <p>17</p>
          <p><small>Minutes</small></p>
 
-<<<<<<< HEAD
 //import './App.css';
 import './Timer.css';
 
@@ -46,9 +45,8 @@ function Timer() {
 
     </section>
     </section>
-  );
+  )
 };
-=======
        </section>
        
        <span>:</span>
@@ -60,7 +58,6 @@ function Timer() {
 
        </section>
      </div>
->>>>>>> bd42c66984ca069b5ca40ee15c007bf08c11c1b4
 
    </section>
    </section>
