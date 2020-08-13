@@ -5,20 +5,30 @@ import './Timer.css';
 
  function Timer() {
   var time = 17 * 60;
+  var minutes = 17;
+  var seconds = 0;
   
-  const updateCountdown = () => {
-   const minutes = Math.floor(time/60);
-   let seconds = time % 60;
-   seconds = seconds < 10 ? '0' + seconds: seconds;
-
-   document.getElementById('countdown').innerHTML = `${minutes}`;
-   document.getElementById('updateseconds').innerHTML = `${seconds}`;
- 
-   time--;
-  };
-  setInterval(updateCountdown, 1000);
+const updateCountdown = () => {
+    minutes = Math.floor(time/60);
+    seconds = time % 60;
+    seconds = seconds < 10 ? '0' + seconds: seconds;
+    if( document.getElementById('countdown') != null  && document.getElementById('updateseconds') != null) {
+    document.getElementById('countdown').innerHTML = `${minutes}`;
+    document.getElementById('updateseconds').innerHTML = `${seconds}`;
+    time--;
+    }
+    if( document.getElementById('countdown') == null  && document.getElementById('updateseconds') == null) {
+        time = 17 * 60;
+        minutes = 17;
+        seconds = 0;
+    } 
+    
+  
+   };
+   setInterval(updateCountdown, 1000);
   
    return (
+    
   
  <section>
    <section className = "timer">
@@ -47,6 +57,9 @@ import './Timer.css';
    </section>
    </section>
    );
+
+  
+  
 };
  
  export default Timer;
