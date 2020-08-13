@@ -1,4 +1,4 @@
-var response = 1;
+var response = 4;
 class MessageParser {
     constructor(actionProvider, state) {
       this.actionProvider = actionProvider;

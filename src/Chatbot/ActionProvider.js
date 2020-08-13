@@ -75,14 +75,25 @@ class ActionProvider {
      const message = this.createChatBotMessage(`Here's a tip I got from a US News article: ${randommessage} You got this! Are you struggling with any of your classes? Yes or No?`);
      this.addMessageToState(message);
   }
-  class3() {
+  class3 = () => {
        const message = this.createChatBotMessage('Pat yourself on the back! You are putting in effort! Short brain breaks are a great idea! You can use this app to take breaks! And if you ever struggle with class work, remember you are not the only one! Just take some time to reflect! What can you do today to do better in your college classes?');
        this.addMessageToState(message);
      }
-     class4() {
+     class4 = () => {
        const message = this.createChatBotMessage("Good job reflecting! Let's talk again tomorrow!");
        this.addMessageToState(message);
      }
+     struggle = () => {
+         //generates random num from 0 to this.greetings.length-1
+         const randomnum = Math.random() * (this.classresources.length - 1);
+         const pick = Math.floor(randomnum);
+       //generates random message for greeting 
+         const randommessage = this.classresources[pick];
+         const message = this.createChatBotMessage(`${randommessage} College classes can be tough! There are resources out there to help you and I believe you can beat these challenges! Text me a "proud moment" from class today or maybe something positive from college today.`);
+         this.addMessageToState(message);
+      
+      }
+      
   career = () => {
     //generates random num from 0 to this.greetings.length-1
     const message = this.createChatBotMessage("Are you a first or a second year student?");
