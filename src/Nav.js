@@ -4,27 +4,34 @@ import {Link} from 'react-router-dom';
 
 function Nav() {
   const navStyle = {
-    color: 'white'
+    color: 'black'
+   
 
-  }
+  } 
   return (
+    <div class = "sidenav">
     <nav>
-        <h3>Planify</h3>
-        <ul className = 'nav-links'>
+       
+        <ul class = 'nav-links'>
           <Link style = {navStyle} to = '/'>
-            <li>Home</li>
+            <li>Planify</li>
           </Link>
           <Link style = {navStyle} to = '/timer'>
-            <li>Timer</li>
+            <li>Clockify</li>
             </Link>
             <Link style = {navStyle} to = "/calendar">
-            <li>Calendar</li>
+            <li>Calendify</li>
             </Link>
             <Link style = {navStyle} to = "/chatbot">
-            <li>Chatbot</li>
+            <li>Chatify</li>
+            </Link>
+            <Link style = {navStyle} to = "/music">
+              <li> Tuneify </li>
+
             </Link>
         </ul>
     </nav>
+    </div>
   );
 }
 

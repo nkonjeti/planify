@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Timer from './Timer';
 import Calendar from './Calendar';
 import Chatbot from './Chatbot';
+import Music from './Music';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path = "/timer" component = {Timer} />
       <Route path = "/calendar" component = {Calendar} />
       <Route path = "/chatbot" component = {Chatbot} />
+      <Route path = '/music' component = {Music} />
       </Switch>
     </div>
     </Router>
