@@ -1,8 +1,23 @@
+
 import React from 'react';
 //import './App.css';
 import './Timer.css';
- 
+
  function Timer() {
+  var time = 17 * 60;
+  
+  const updateCountdown = () => {
+   const minutes = Math.floor(time/60);
+   let seconds = time % 60;
+   seconds = seconds < 10 ? '0' + seconds: seconds;
+
+   document.getElementById('countdown').innerHTML = `${minutes}`;
+   document.getElementById('updateseconds').innerHTML = `${seconds}`;
+ 
+   time--;
+  };
+  setInterval(updateCountdown, 1000);
+  
    return (
   
  <section>
@@ -14,7 +29,7 @@ import './Timer.css';
       </div>
      <div>
        <section>
-         <p>17</p>
+         <p id ="countdown">17</p>
          <p><small>Minutes</small></p>
 
        </section>
@@ -23,7 +38,7 @@ import './Timer.css';
       
       
        <section>
-         <p>00</p>
+         <p id = "updateseconds">00</p>
          <p><small>Seconds</small></p>
 
        </section>
