@@ -1,4 +1,4 @@
-var response = 1;
+var response = 4;
 class MessageParser {
     constructor(actionProvider, state) {
       this.actionProvider = actionProvider;
@@ -31,10 +31,10 @@ class MessageParser {
       else if (lowercase.includes("5")){
         this.actionProvider.doIt();
       }
-      else if (lowercase.includes("yes")) {
+      else if (lowercase.includes("thumbs up")) {
         this.actionProvider.maximize();
       }
-      else if (lowercase.includes("no")) {
+      else if (lowercase.includes("thumbs down")) {
         this.actionProvider.maximization();
       }
       else if (lowercase.includes("6")) {
@@ -66,9 +66,13 @@ class MessageParser {
       //classes
       
 
-      else if(response == 4 && lowercase.includes("yes")) {
-        this.actionProvider.struggle();
-      }
+      //classes
+      else if(response == 8 && lowercase.includes("yes")) {
+               this.actionProvider.struggle();
+            }
+         
+        
+     
 
      //emotions
 
@@ -78,7 +82,7 @@ class MessageParser {
 
 
       //this would direct to planned reflection questions
-     
+     else {
         if(response === 1){
           this.actionProvider.greet();
           response++;
@@ -143,6 +147,6 @@ class MessageParser {
       }
       
     }
-  
+}
   
   export default MessageParser;

@@ -1,5 +1,23 @@
 import React from 'react';
+//import './App.css';
+import './Timer.css';
+ 
+ function Timer() {
+   return (
+  
+ <section>
+   <section className = "timer">
+      <div>
+       
+      <h2>Break Time!</h2>
+       <p>Countdown for your break. You deserve it.</p>
+      </div>
+     <div>
+       <section>
+         <p>17</p>
+         <p><small>Minutes</small></p>
 
+<<<<<<< HEAD
 //import './App.css';
 import './Timer.css';
 
@@ -30,5 +48,23 @@ function Timer() {
     </section>
   );
 };
+=======
+       </section>
+       
+       <span>:</span>
+      
+      
+       <section>
+         <p>00</p>
+         <p><small>Seconds</small></p>
 
-export default Timer;
+       </section>
+     </div>
+>>>>>>> bd42c66984ca069b5ca40ee15c007bf08c11c1b4
+
+   </section>
+   </section>
+   );
+};
+ 
+ export default Timer;
