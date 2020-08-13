@@ -88,6 +88,12 @@ class ActionProvider {
     this.addMessageToState(message);
   }
 
+  laterJobs = () => {
+    const message = this.createChatBotMessage("You should consider applying for part time or full time jobs, especially since you're almost done with your college journey! Here are some common interview questions so you can start preparing: 1. Tell me about yourself (think about what makes you uniquely qualified) 2. What are your long-term goals? 3. What is your greatest accomplishment? 4. How has your education/degree prepared you for your career? 5. What are your strenghts? 6. Have you ever had a conflict with a boss or professor? How did you resolve it? 7. What is your greatest weakness? 8. If I were to ask one of your professors to describe you, what would they say? 9. How would you describe your ideal job? 10. How do you personally define success? 11. What accomplishments have given you the most satisfaction in life? 12. What goals do you have for your career? 13. What were your favorite college classes and why? 14. Do you have any plans for higher education? 15. What do you know about our company? 16. Why are you interested in our company? 17. Do you have any location preferences?");
+    this.addMessageToState(message);
+  }
+
+
     maximization = () => {
       const message = this.createChatBotMessage("Thats okay! You could simply offer to be the designated driver or keep a bottled drink like a soda or iced tea to drink at parties to avoid being offered. All else fails, blame your parents!");
       this.addMessageToState(message);

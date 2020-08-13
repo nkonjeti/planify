@@ -59,7 +59,12 @@ class MessageParser {
      {
         this.actionProvider.earlyInternships();
      }
+     else if (lowercase.includes("third") || (lowercase.includes("fourth")))
+     {
+       this.actionProvider.laterJobs();
+     }
       //classes
+      
 
       else if(response == 4 && lowercase.includes("yes")) {
         this.actionProvider.struggle();
