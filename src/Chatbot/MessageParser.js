@@ -22,6 +22,39 @@ class MessageParser {
      else if(lowercase.includes("are you a robot")){
         this.actionProvider.robot();
       }
+      else if(lowercase.includes("Peer") || lowercase.includes("1")) {
+        this.actionProvider.peerPressure();
+      }
+      else if(lowercase.includes("Exclusion") || lowercase.includes("2")) {
+        this.actionProvider.exclusion();
+      }
+      else if (lowercase.includes("5")){
+        this.actionProvider.doIt();
+      }
+      else if (lowercase.includes("yes")) {
+        this.actionProvider.maximize();
+      }
+      else if (lowercase.includes("no")) {
+        this.actionProvider.maximization();
+      }
+      else if (lowercase.includes("6")) {
+        this.actionProvider.friends();
+      }
+      else if (lowercase.includes("sure")) {
+        this.actionProvider.sure();
+      }
+      else if (lowercase.includes("unsure")) {
+        this.actionProvider.unsure();
+      }
+      else if (lowercase.includes("7")) {
+        this.actionProvider.work();
+      }
+      else if (lowercase.includes("work")) {
+        this.actionProvider.work2();
+      }
+      else if (lowercase.includes("colleagues")) {
+        this.actionProvider.work3();
+      }
      else if (lowercase.includes("first") || (lowercase.includes("second")))
      {
         this.actionProvider.earlyInternships();
@@ -71,25 +104,30 @@ class MessageParser {
 
 
         //Serena Social Life here
+        else if (response === 5) {
+          this.actionProvider.socialIntro();
+          response++;
 
+
+        }
 
 
 
 
         //Neha classes here (we can change these response numbers one we know everyone else's)
-        else if (response == 6) {
+        else if (response === 6) {
           this.actionProvider.class1();
           response++
         }
-        else if(response == 7) {
+        else if(response === 7) {
           this.actionProvider.class2();
           response++;
         }
-        else if(response == 8) {
+        else if(response === 8) {
           this.actionProvider.class3();
           response++;
         }
-        else if (response == 9) {
+        else if (response === 9) {
           this.actionProvider.class4();
           
         }
