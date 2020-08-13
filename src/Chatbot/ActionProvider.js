@@ -75,6 +75,20 @@ class ActionProvider {
      const message = this.createChatBotMessage(`Here's a tip I got from a US News article: ${randommessage} You got this! Are you struggling with any of your classes? Yes or No?`);
      this.addMessageToState(message);
   }
+  class3 = () => {
+     //generates random num from 0 to this.greetings.length-1
+     const randomnum = Math.random() * (this.classresources.length - 1);
+     const pick = Math.floor(randomnum);
+   //generates random message for greeting 
+     const randommessage = this.classresources[pick];
+     const message = this.createChatBotMessage(`${randommessage} Just remember if you ever struggle with any of your classes you are not alone! Time to reflect! What can you do today to do better in your classes?'`);
+     this.addMessageToState(message);
+
+  }
+  class4 = () => {
+    const message = this.createChatBotMessage("It was nice talking to you! Let's talk again tomorrow!")
+    this.addMessageToState(message);
+  }
   career = () => {
     //generates random num from 0 to this.greetings.length-1
     const message = this.createChatBotMessage("Are you a first or a second year student?");
@@ -84,7 +98,7 @@ class ActionProvider {
   };
 
   earlyInternships = () => {
-    const message = this.createChatBotMessage("You might want to look into the early careers or apprentenceship section of companies you are interested in. But first send your resume to your college career center for review. Internship apps typically open in the fall/winter, so be prepared by then! Research is also a viable way to get experience if you don't land the internship of your dreams right away!")
+    const message = this.createChatBotMessage("You might want to look into the early careers or apprentenceship section of companies you are interested in. But first send your resume to your college career center for review. Internship apps typically open in the fall/winter, so be prepared by then! Research is also a viable way to get experience if you don't land the internship of your dreams right away! Share an experience with me that you might want to put on your resume!")
     this.addMessageToState(message);
   }
 

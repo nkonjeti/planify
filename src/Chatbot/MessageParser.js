@@ -1,4 +1,4 @@
-var response = 1;
+var response = 4;
 class MessageParser {
     constructor(actionProvider, state) {
       this.actionProvider = actionProvider;
@@ -73,7 +73,7 @@ class MessageParser {
 
 
       //this would direct to planned reflection questions
-     
+     else {
         if(response === 1){
           this.actionProvider.greet();
           response++;
@@ -138,6 +138,6 @@ class MessageParser {
       }
       
     }
-  
+}
   
   export default MessageParser;
