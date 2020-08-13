@@ -5,7 +5,7 @@ import './Timer.css';
 
 
  function Timer() {
-  
+  return null;
    
  }
  
