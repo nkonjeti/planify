@@ -2,11 +2,12 @@
 import React from 'react';
 //import './App.css';
 import './Timer.css';
+var time = 17 * 60;
+var minutes = 17;
+var seconds = 0;
 
  function Timer() {
-  var time = 17 * 60;
-  var minutes = 17;
-  var seconds = 0;
+  
   
 const updateCountdown = () => {
     minutes = Math.floor(time/60);
@@ -15,18 +16,22 @@ const updateCountdown = () => {
     if( document.getElementById('countdown') != null  && document.getElementById('updateseconds') != null) {
     document.getElementById('countdown').innerHTML = `${minutes}`;
     document.getElementById('updateseconds').innerHTML = `${seconds}`;
-    time--;
-    }
-    if( document.getElementById('countdown') == null  && document.getElementById('updateseconds') == null) {
-        time = 17 * 60;
-        minutes = 17;
-        seconds = 0;
-    } 
     
+    }
+   else if( document.getElementById('countdown') == null  && document.getElementById('updateseconds') == null) { 
+    time = 17 * 60;
+     minutes = 17;
+    seconds = 0;
+
+   }
   
+   time--;
+   
    };
+   
    setInterval(updateCountdown, 1000);
-  
+   
+   
    return (
     
   
@@ -58,7 +63,7 @@ const updateCountdown = () => {
    </section>
    );
 
-  
+   
   
 };
  
