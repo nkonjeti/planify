@@ -1,4 +1,4 @@
-var response = 3;
+var response = 1;
 class MessageParser {
     constructor(actionProvider, state) {
       this.actionProvider = actionProvider;
@@ -52,7 +52,7 @@ class MessageParser {
       else if (lowercase.includes("7")) {
         this.actionProvider.work();
       }
-      else if (lowercase.includes("work") && response == 6) {
+      else if (lowercase.includes("work") && response === 6) {
         this.actionProvider.work2();
       }
       else if (lowercase.includes("colleagues")) {
@@ -69,18 +69,31 @@ class MessageParser {
       //classes
       
 
-     else if(response == 3 && lowercase.includes("yes")) {
+     else if(response === 3 && lowercase.includes("yes")) {
       this.actionProvider.tips3();
      }
       //classes
-      else if(response == 8 && lowercase.includes("yes")) {
-               this.actionProvider.struggle();
-            }
+      else if(response === 8 && lowercase.includes("yes")) {
+        this.actionProvider.struggle();
+      }
          
         
      
 
      //emotions
+     else if(lowercase.includes("sad")){
+      
+      this.actionProvider.sad();
+    }
+
+    else if(lowercase.includes("happy")){
+      this.actionProvider.askHappy();
+    
+    }
+
+    else if(lowercase.includes("lone")){
+      this.actionProvider.exclude();
+    }
 
 
 
@@ -100,9 +113,13 @@ class MessageParser {
           response++;
          
         }
+        else if (response === 2) {
+          this.actionProvider.emotionIntro();
+          response++;
+        }
         //here
         //Anushka Emotion code here
-
+        
 
         
 
