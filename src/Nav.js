@@ -9,10 +9,10 @@ function Nav() {
 
   } 
   return (
-    <div class = "sidenav">
+    <div className = "sidenav">
     <nav>
        
-        <ul class = 'nav-links'>
+        <ul className = 'nav-links'>
           <Link style = {navStyle} to = '/'>
             <li>Planify</li>
           </Link>

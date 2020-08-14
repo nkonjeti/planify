@@ -46,12 +46,13 @@ function Calendar() {
               'RRULE:FREQ=DAILY;COUNT=2'
             ],
             'attendees': [
-              { 'email': 'sana.madhavan20.com' },
-              { 'email': 'bliss-the-chatbot@gmail.com' },
-              { 'email': 'nkonjeti@gmail.com' },
-              { 'email': 'serenabehera@gmail.com' },
-              { 'email': 'kankipatigautami@gmail.com' },
-              { 'email': 'anushka.pachaury@gmail.com' }
+              {'email': 'sana.madhavan20@gmail.com'},
+              {'email': 'nkonjeti@gmail.com'},
+              {'email': 'serenabehera@gmail.com'},
+              {'email': 'bliss@example.com'},
+              {'email': 'kankipatigautami@gmail.com'},
+              {'email': 'anushka.pachaury@gmail.com'},
+             
             ],
             'reminders': {
               'useDefault': false,
@@ -101,10 +102,10 @@ function Calendar() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Click to add event to Google Calendar</p>
+        <p>Click to add HackIllinois event to Google Calendar</p>
         <p style={{ fontSize: 18 }}>Uncomment the get events code to get events</p>
         <p style={{ fontSize: 18 }}>Don't forget to add your Client Id and Api key</p>
-        <button style={{ width: 100, height: 50 }} onClick={handleClick}>Add Event</button>
+        <button style={{ width: 100, height: 50 }} onClick={handleClick}>Add HackIllinois</button>
       </header>
     </div>
   );
