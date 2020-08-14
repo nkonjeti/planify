@@ -18,24 +18,39 @@ body{
 .frame1{
   border-style: solid;
   border-color: green;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .frame2{
   border-style: solid;
   border-color: green;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .frame3{
   border-style: solid;
   border-color: green;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .frame4{
   border-style: solid;
   border-color: green;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .frame5{
   border-style: solid;
   border-color: green;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
