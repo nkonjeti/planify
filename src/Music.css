@@ -9,6 +9,6 @@ body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
-html, body, h1, h2, h3, h4, h5, h6 {
-  font-size: 30x; 
+html, body, h1, h2, h3, h4, h5 {
+  font-size: 30px; 
 }
