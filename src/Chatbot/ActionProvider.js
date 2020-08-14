@@ -39,6 +39,11 @@ class ActionProvider {
 
     };
 
+    emotionIntro = () => {
+      const message = this.createChatBotMessage("How are you feeling right now?");
+      this.addMessageToState(message);
+    }
+
     socialIntro = () => {
       const message = this.createChatBotMessage("So, what about your social life would you like to reflect on? Choose from these options that fits you most: 1. Peer Pressure, 2. Exclusion (Type a number)");
       this.addMessageToState(message);
@@ -182,6 +187,34 @@ class ActionProvider {
       const message = this.createChatBotMessage("Sorry, I didn't quite get you! Could you type out your response again?")
       this.addMessageToState(message);
     }
+    
+    askHappy = () => {
+      const message = this.createChatBotMessage("That's awesome! What made you happy today?");
+      this.addMessageToState(message);
+    }
+   
+    sad = () => {
+  
+      const message = this.createChatBotMessage("Do not be too hard on yourself. Try to be happy with what you achieved today. You can make a list of all the events or tasks that you weren't happy with and work on them. What is causing your sadness? Choose one of these: Peer Pressure");
+      this.addMessageToState(message);
+  
+    }
+   
+    happy = () => {
+  
+      const message = this.createChatBotMessage("Good Job! I'm so proud of you. Keep up the good work:)");
+      this.addMessageToState(message);
+  
+    }
+  
+    exclude = () => {
+  
+      const message = this.createChatBotMessage("Try to study in study groups and surround yourself with people who you like to talk to and make you feel special!)");
+      this.addMessageToState(message);
+  
+    }
+ 
+    
   
 
     addMessageToState = (message) => {
