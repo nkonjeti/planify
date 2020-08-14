@@ -9,6 +9,7 @@ body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
+<<<<<<< HEAD
  body, h1, h2, h3, h4, h5 {
   font-size: 30px; 
 
@@ -53,4 +54,9 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
+=======
+body, h1, h2, h3, h4, h5 {
+  font-size: 30px; 
+  background-color:#282c34;
+>>>>>>> 797d6b25eef3ab44eae2d74c4c21732f56894230
 }
