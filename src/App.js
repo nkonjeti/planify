@@ -5,10 +5,12 @@ import Timer from './Timer';
 import Calendar from './Calendar';
 import Chatbot from './Chatbot';
 import Music from './Music';
+import logo from './logo.png';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
+
     <Router>
     <div>
       <Nav />
@@ -27,7 +29,7 @@ function App() {
 const Home = () => (
   <div>
     <h1>
-      Home Page
+      <img src={logo} className="App-logo" alt="logo" />
     </h1>
   </div>
 
