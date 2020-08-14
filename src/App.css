@@ -78,7 +78,32 @@ nav {
        box-sizing: border-box;
 
    }
-
+   .hello:hover {
+    letter-spacing: 0.8em;
+    background-color: #F08C99;
+  }
+  
+  .hello{
+    color: white;
+  }
+  button {
+    height: 5em;
+    width: 300%;
+    padding: 1.5em;
+    
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: #5f94e8; testing to see what colors look nice*/
+    background-color: #B697CC;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+   
+  }
+  
  
   
  
