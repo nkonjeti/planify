@@ -30,13 +30,13 @@ nav {
   align-items: center; 
 }
 
-.App-header{
+.hackillinois{
   font-family: 'Anton', sans-serif;
   color:#CCE6FF;
-  border: solid 1px white;
+  
   width:650px;
    margin:0px auto;
-   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Calendar_icon_2.svg/989px-Calendar_icon_2.svg.png');
+   
   
 }
 
