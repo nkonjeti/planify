@@ -54,14 +54,20 @@ class ActionProvider {
     }
     
     clubs = () => {
-      const message = this.createChatBotMessage("What clubs are you involved in?");
+      const message = this.createChatBotMessage("Just remember that you are one in a million and a very very COOL person! Don't let anyone tell you different! So, are you in any clubs?");
       //prints the message
       this.addMessageToState(message);
   
     };
 
     tips1 = () => {
-      const message = this.createChatBotMessage("Are you able to manage your time well with clubs?");
+      //generates random num from 0 to this.greetings.length-1
+      const randomnum = Math.random() * (this.timeManagement.length - 1);
+      const pick = Math.floor(randomnum);
+    //generates random message for greeting 
+      const randommessage = this.timeManagement[pick];
+      const message = this.createChatBotMessage(`${randommessage}. Reflect on you favorite club and text me something you learned from a club today or anything you are excited for!`);
+      //prints the message
       this.addMessageToState(message);
     }
 
@@ -73,7 +79,7 @@ class ActionProvider {
     tips3= () => {
         //generates random num from 0 to this.timeManagement.length-1
         const randomnum = Math.random() * (this.timeManagement.length - 1);
-    }
+    } 
     doIt = () => {
       const message = this.createChatBotMessage("If a simple no isn't doing the trick, come up with a few excuses. Are you on a team of any kind? (Gimme a thumbs up or thumbs down to go on)");
       this.addMessageToState(message);
@@ -195,7 +201,7 @@ class ActionProvider {
    
     sad = () => {
   
-      const message = this.createChatBotMessage("Do not be too hard on yourself. Try to be happy with what you achieved today. You can make a list of all the events or tasks that you weren't happy with and work on them. What is causing your sadness? Choose one of these: Peer Pressure");
+      const message = this.createChatBotMessage("Do not be too hard on yourself. Try to be happy with what you achieved today. You can make a list of all the events or tasks that you weren't happy with and work on them. What is causing your sadness? Let me know if it's peer pressure!");
       this.addMessageToState(message);
   
     }
@@ -209,7 +215,7 @@ class ActionProvider {
   
     exclude = () => {
   
-      const message = this.createChatBotMessage("Try to study in study groups and surround yourself with people who you like to talk to and make you feel special!)");
+      const message = this.createChatBotMessage("Try to study in study groups and surround yourself with people who you like to talk to and make you feel special! Could you reflect on a time you were in a group? Text me the positive impact it had on you or something you learned!");
       this.addMessageToState(message);
   
     }
