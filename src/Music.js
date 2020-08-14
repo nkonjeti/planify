@@ -5,7 +5,7 @@ import './Music.css';
 
  function Music() {
      return (
-    
+    <body>
          <div>
   <div>
       <h1> confidence boost</h1>
@@ -28,6 +28,7 @@ import './Music.css';
   <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?si=JeYZx3p2RlS0q4i7uWyDNA" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 </div>
+</body>
      );
      
     
