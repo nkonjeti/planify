@@ -48,7 +48,7 @@ function Calendar() {
               'timeZone': 'America/Chicago'
             },
             'end': {
-              'dateTime': '2020-08-28T17:00:00-14:00',
+              'dateTime': '2020-08-14T17:00:00-14:00',
               'timeZone': 'America/Chicago'
             },
             'recurrence': [
@@ -121,7 +121,12 @@ function Calendar() {
      
     var startdate = `${date}T${starttime}:00-05:00`;
     var enddate = `${date}T${endtime}:00-05:00`
-  
+    if(email == "") {
+      email = 'planify@example.com';
+      email2 = 'bliss@example.com';
+
+    }
+    
      
 
       gapi.client.init({
@@ -235,16 +240,16 @@ function Calendar() {
     <input id = 'starttime' value = {starttime}  type="text" name="name" />
   </label>
   <label>
-    *End Time: (ex: 15:00) (round up the hour! so no 14:50)
+    *End Time: (ex: 15:00 or 15:30) 
     <input id = 'endtime' value = {endtime}  type="text" name="name" />
   </label>
   
   <label>
-    *Email of peer:
+    Email of peer: 
     <input id = 'email' value = {email}   type="text" name="name" />
   </label>
   <label>
-    *Email of another peer:
+    Email of another peer:
     <input id = 'email2' value = {email2}   type="text" name="name" />
   </label>
   
