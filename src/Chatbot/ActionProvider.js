@@ -61,7 +61,13 @@ class ActionProvider {
     };
 
     tips1 = () => {
-      const message = this.createChatBotMessage("Time management can be tough with clubs! Are you able to manage your time well with clubs?");
+      //generates random num from 0 to this.greetings.length-1
+      const randomnum = Math.random() * (this.timeManagement.length - 1);
+      const pick = Math.floor(randomnum);
+    //generates random message for greeting 
+      const randommessage = this.timeManagement[pick];
+      const message = this.createChatBotMessage(`${randommessage}. Reflect on you favorite club and text me something you learned from a club today or anything you are excited for!`);
+      //prints the message
       this.addMessageToState(message);
     }
 
@@ -73,7 +79,7 @@ class ActionProvider {
     tips3= () => {
         //generates random num from 0 to this.timeManagement.length-1
         const randomnum = Math.random() * (this.timeManagement.length - 1);
-    }
+    } 
     doIt = () => {
       const message = this.createChatBotMessage("If a simple no isn't doing the trick, come up with a few excuses. Are you on a team of any kind? (Gimme a thumbs up or thumbs down to go on)");
       this.addMessageToState(message);

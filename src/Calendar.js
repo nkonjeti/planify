@@ -2,9 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 //import { gapi } from 'gapi-script';
+import { Button } from 'reactstrap'
 
   
 function Calendar() {
+
+  alert("Enter your class information to get it added to your google calendar as a weekly event");
+
+  alert("Answer all the * required questions and follow the examples");
+
+  alert("Allow the popup for you calendar to open in the next page"); 
   var summary;
   var location;
   var description;
@@ -210,16 +217,19 @@ function Calendar() {
   return (
     <div className="App">
      
-      <header className="App-header">
+      <header className="hackillinois">
          
-        <p>Click to add the HackIllinois event to Google Calendar</p>
+        <p>Click to add HackIllinois Demo Day to Google Calendar</p>
+      
         <button style={{ width: 100, height: 50 }} onClick={handleClick}>Add HackIllinois</button>
-        <p style={{ fontSize: 18 }}>Enter your class information to get it added to your google calendar as a weekly event!</p>
-        <p style={{ fontSize: 18 }}>Answer all the * required questions and follow the examples! Allow the popup for you calendar to open in the next page.</p>
+
+      </header>
+
+        
         
        
 
-      </header>
+      
       <div class="form-block">
       <form>
   <div className = "padding">
@@ -227,6 +237,7 @@ function Calendar() {
     *Class Name:
     <input id = 'summary' value = {summary} type="text" name="name" />
   </label>
+  
   </div>
   <div className = "padding">
   <label>
@@ -272,12 +283,13 @@ function Calendar() {
   </div>
   
 </form>
+
 <button style={{ width: 100, height: 50 }} onClick={addClass}>Add Class</button>
-    </div>
+    </div> 
     
     
     
-    </div> //goes with overall form block
+    </div> //goes with overall entire app block
   );
    
 }

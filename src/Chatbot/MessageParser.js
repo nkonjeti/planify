@@ -70,7 +70,7 @@ class MessageParser {
       
 
      else if(response === 4 && lowercase.includes("yes")) {
-      this.actionProvider.tips3();
+      this.actionProvider.tips1();
      }
       //classes
       else if(response === 8 && lowercase.includes("yes")) {

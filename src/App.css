@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -37,10 +40,45 @@ nav {
   align-items: center; 
 }
 
+.hackillinois{
+  font-family: 'Anton', sans-serif;
+  color:#CCE6FF;
+  
+  width:650px;
+   margin:0px auto;
+   
+  
+}
+
+
  .padding {
-   text-align: left;
+   text-align: center;
    padding: 20px;
    display: block;
    margin-left: 500px;
-   font-family: 'Amatic SC', cursive;
+   margin:0px auto;
+  font-family: 'Anton', sans-serif;
  }
+
+   .form-block{
+     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+     margin:0px auto;
+    background-color: #CCE6FF;
+    width: 50%;
+    height: 100%;
+    border: solid 3px red;
+   }
+
+   input[type = text]{
+     width:100%;
+     padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+
+   }
+
+ 
+  
+ 
