@@ -210,7 +210,7 @@ function Calendar() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+         
         <p>Click to add the HackIllinois event to Google Calendar</p>
         <p style={{ fontSize: 18 }}>Enter your class information to get it added to your google calendar as a weekly event!</p>
         <p style={{ fontSize: 18 }}>Answer all the * required questions and follow the examples! Allow the popup for you calendar to open in the next page.</p>
