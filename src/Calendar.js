@@ -219,39 +219,54 @@ function Calendar() {
 
       </header>
       <form>
+  <div className = "padding">
   <label>
     *Class Name:
     <input id = 'summary' value = {summary} type="text" name="name" />
   </label>
+  </div>
+  <div className = "padding">
   <label>
     Location:
     <input id = 'location' value = {location}  type="text" name="name" />
   </label>
+  </div>
+  <div className = "padding">
   <label>
     Type(lecture/discussion):
     <input id = 'description' value = {description}  type="text" name="name" />
   </label>
+  </div>
+  <div className = "padding">
   <label>
     *Date (ex: 2020-08-14):
     <input id = 'date' value = {date}  type="text" name="name" />
   </label>
+  </div>
+  <div className = "padding">
   <label>
     *Start Time: (ex: 14:00 or 09:00)
     <input id = 'starttime' value = {starttime}  type="text" name="name" />
   </label>
+  </div>
+  <div className = "padding">
   <label>
     *End Time: (ex: 15:00 or 15:30) 
     <input id = 'endtime' value = {endtime}  type="text" name="name" />
   </label>
-  
+  </div>
+  <div className = "padding">
   <label>
     *Email of peer: 
     <input id = 'email' value = {email}   type="text" name="name" />
   </label>
+  </div>
+  <div className = "padding">
   <label>
     *Email of another peer:
     <input id = 'email2' value = {email2}   type="text" name="name" />
   </label>
+  </div>
   
 </form>
 <button style={{ width: 100, height: 50 }} onClick={addClass}>Add Class</button>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 .App {
   text-align: center;
 }
@@ -31,4 +32,12 @@ nav {
 }
 
 
- 
+ .padding {
+   text-align: left;
+   padding: 20px;
+   display: block;
+   margin-left: 500px;
+   font-family: 'Amatic SC', cursive;
+
+
+ }
