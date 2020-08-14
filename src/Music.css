@@ -5,5 +5,7 @@
   margin-right: 100px;
 }
 body{
-  background-color: #585858;
+  background-color: #282c34;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white 
 }
