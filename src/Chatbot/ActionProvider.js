@@ -33,14 +33,14 @@ class ActionProvider {
         const pick = Math.floor(randomnum);
       //generates random message for greeting 
         const randommessage = this.greetings[pick];
-        const message = this.createChatBotMessage(`Hello ${randommessage}.`);
+        const message = this.createChatBotMessage(`Hello ${randommessage}. What's up?`);
         //prints the message
         this.addMessageToState(message);
 
     };
 
     emotionIntro = () => {
-      const message = this.createChatBotMessage("How are you feeling right now?");
+      const message = this.createChatBotMessage("How are you feeling right now? Please let me know if you are feeling sad or lone!");
       this.addMessageToState(message);
     }
 

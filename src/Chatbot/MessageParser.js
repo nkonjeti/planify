@@ -43,7 +43,7 @@ class MessageParser {
       else if (lowercase.includes("6")) {
         this.actionProvider.friends();
       }
-      else if (lowercase.includes("sure")) {
+      else if (lowercase.includes("sure") && response == 3) {
         this.actionProvider.sure();
       }
       else if (lowercase.includes("unsure")) {
