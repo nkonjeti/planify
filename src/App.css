@@ -28,10 +28,6 @@ nav {
    list-style: none; 
 }
 
-
-
-
-
 .chatbot {
   text-align: center;
   background-color: #282c34;
@@ -41,7 +37,6 @@ nav {
   align-items: center; 
 }
 
-
  .padding {
    text-align: left;
    padding: 20px;
@@ -49,9 +44,3 @@ nav {
    margin-left: 500px;
    font-family: 'Amatic SC', cursive;
  }
-
-   .form-block{
-    background-color:#75DAFF;
-   }
-
- 
