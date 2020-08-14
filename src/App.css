@@ -11,7 +11,7 @@ img {
                   drop-shadow(-1px -1px 0 black);
   filter: drop-shadow(1px 1px 0 black) 
           drop-shadow(-1px -1px 0 black);
-  width: 600px;
+  width: 1200px;
   height: auto;
 }
 nav {
