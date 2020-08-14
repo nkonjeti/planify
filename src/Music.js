@@ -5,6 +5,7 @@ import './Music.css';
 
  function Music() {
      return (
+    
          <div>
   <div>
       <h1> confidence boost</h1>
@@ -28,6 +29,8 @@ import './Music.css';
 </div>
 </div>
      );
+     
+    
  }
  
  export default Music;
