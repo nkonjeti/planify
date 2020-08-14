@@ -22,6 +22,10 @@ import './Music.css';
   <h1> Bollywood </h1>
   <iframe src="https://open.spotify.com/embed/playlist/2yKxZiKvysgl5NBSPD4XKQ?si=PSxvySUeRrSmkq3ZignzVw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
+<div>
+  <h1> Lo-fi </h1>
+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?si=JeYZx3p2RlS0q4i7uWyDNA" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
 </div>
      );
  }

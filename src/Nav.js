@@ -4,12 +4,12 @@ import {Link} from 'react-router-dom';
 
 function Nav() {
   const navStyle = {
-    color: 'black'
+    color: 'white'
    
 
   } 
   return (
-    <div className = "sidenav">
+    <div>
     <nav>
        
         <ul className = 'nav-links'>

@@ -1,32 +1,23 @@
 .App {
   text-align: center;
 }
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  color: rgba(14, 1, 1, 0.067);
-  overflow-x: hidden;
-  padding-top: 20px;
-  
-
+nav {
+    display:flex;
+    justify-content: spacearound;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(73,79,82 );
+    color: white;
 }
-.nav-links {
-  padding: 50px 20px 20px 20px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  background-color: rgba(14, 1, 1, 0.067);
-  display: block;
- 
+.nav-links{
+   width: 60%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   list-style: none; 
 }
 
-.nav-links:hover {
-  color: #f1f1f1;
-}
+
 
 
 
