@@ -5,14 +5,12 @@
   margin-right: 100px;
 }
 body{
-<<<<<<< HEAD
   background-color: #282c34;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
 html, body, h1, h2, h3, h4, h5 {
   font-size: 30px; 
-=======
+
   background-color:#282c34;
->>>>>>> ce44eb6a662f1e46036e396e70e9436d289f285b
 }
