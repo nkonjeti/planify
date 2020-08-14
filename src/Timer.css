@@ -1,1 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+.video {
+    display:block;
+    margin-right:center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-width: 100px;
+    border-color: rgb(122, 196, 214);
+}
+.breaktime {
+    
+    color: rgb(133, 226, 153);
+    text-align:center;
+}
 
+h1{
+    font-family: 'Lemonada', cursive;
+    color: rgb(133, 226, 153);
+}
