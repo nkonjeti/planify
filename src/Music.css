@@ -7,5 +7,6 @@
 body{
   background-color: #282c34;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white 
+  color: white;
+  font-size: 14px; 
 }
