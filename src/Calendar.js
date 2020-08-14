@@ -227,6 +227,7 @@ function Calendar() {
     *Class Name:
     <input id = 'summary' value = {summary} type="text" name="name" />
   </label>
+  
   </div>
   <div className = "padding">
   <label>
