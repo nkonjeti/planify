@@ -54,14 +54,14 @@ class ActionProvider {
     }
     
     clubs = () => {
-      const message = this.createChatBotMessage("What clubs are you involved in?");
+      const message = this.createChatBotMessage("Just remember that you are one in a million and a very very COOL person! Don't let anyone tell you different! So, are you in any clubs?");
       //prints the message
       this.addMessageToState(message);
   
     };
 
     tips1 = () => {
-      const message = this.createChatBotMessage("Are you able to manage your time well with clubs?");
+      const message = this.createChatBotMessage("Time management can be tough with clubs! Are you able to manage your time well with clubs?");
       this.addMessageToState(message);
     }
 
@@ -195,7 +195,7 @@ class ActionProvider {
    
     sad = () => {
   
-      const message = this.createChatBotMessage("Do not be too hard on yourself. Try to be happy with what you achieved today. You can make a list of all the events or tasks that you weren't happy with and work on them. What is causing your sadness? Choose one of these: Peer Pressure");
+      const message = this.createChatBotMessage("Do not be too hard on yourself. Try to be happy with what you achieved today. You can make a list of all the events or tasks that you weren't happy with and work on them. What is causing your sadness? Let me know if it's peer pressure!");
       this.addMessageToState(message);
   
     }
@@ -209,7 +209,7 @@ class ActionProvider {
   
     exclude = () => {
   
-      const message = this.createChatBotMessage("Try to study in study groups and surround yourself with people who you like to talk to and make you feel special!)");
+      const message = this.createChatBotMessage("Try to study in study groups and surround yourself with people who you like to talk to and make you feel special! Could you reflect on a time you were in a group? Text me the positive impact it had on you or something you learned!");
       this.addMessageToState(message);
   
     }
