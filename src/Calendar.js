@@ -221,7 +221,7 @@ function Calendar() {
          
         <p>Click to add HackIllinois Demo Day to Google Calendar</p>
       
-        <button style={{ width: 100, height: 50 }} onClick={handleClick}>Add HackIllinois</button>
+        <button className = 'hello' style={{ width: 300, height: 50 }} onClick={handleClick}>Add HackIllinois</button>
 
       </header>
 
@@ -284,7 +284,7 @@ function Calendar() {
   
 </form>
 
-<button style={{ width: 100, height: 50 }} onClick={addClass}>Add Class</button>
+<button className = 'hello' style={{ width: 200, height: 50 }} onClick={addClass}>Add Class</button>
     </div> 
     
     
