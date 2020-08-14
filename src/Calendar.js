@@ -245,11 +245,11 @@ function Calendar() {
   </label>
   
   <label>
-    Email of peer: 
+    *Email of peer: 
     <input id = 'email' value = {email}   type="text" name="name" />
   </label>
   <label>
-    Email of another peer:
+    *Email of another peer:
     <input id = 'email2' value = {email2}   type="text" name="name" />
   </label>
   
